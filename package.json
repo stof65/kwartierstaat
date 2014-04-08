@@ -1,12 +1,12 @@
 {
-  "name": "application-name",
+  "name": "kwartierstaat",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node app.js"
   },
   "dependencies": {
-    "express": "3.5.1",
+    "express": "3.5.x",
     "ejs": "*"
   }
 }
