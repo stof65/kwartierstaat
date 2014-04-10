@@ -1,0 +1,23 @@
+.ks-gen1 {
+  font-size: 2.5vw;
+}
+.ks-gen2 {
+  font-size: 1.75vw;
+}
+.ks-gen3 {
+  font-size: 1.1vw;
+  min-height: 6.0vw;
+  max-height: 6.0vw;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
+.ks-gen4 {
+  font-size: 0.8vw;
+  min-height: 6.0vw;
+  max-height: 6.0vw;
+}

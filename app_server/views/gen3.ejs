@@ -18,69 +18,93 @@
 				<div class="portlet portlet-default">
 					<div class="portlet-heading">
 						<div class="portlet-title">
-							<h4>Default Portlet</h4>
+							<h4>4 generaties</h4>
 						</div>
 						<div class="clearfix"></div>
 					</div>
 
 					<div class="portlet-body">
-						<h3 id="grid-nesting">Nesting columns</h3>
-						<p>To nest your content with the default grid, add a new
-							<code>.row</code>and set of<code>.col-md-*</code>columns within an existing
-							<code>.col-md-*</code>column. Nested rows should include a set of columns that add up to 12.</p>
 							<div class="row show-grid">
-								<div class="col-md-9">
-									<a href='#'><%= kwartier.i1.name %></a> °<%= kwartier.i1.birth.place %> <%= kwartier.i1.birth.date %>
+								<div class="col-md-12 ks-gen1">
 									<div class="row show-grid">
-										<div class="col-md-6">
-											Level 2: <%= kwartier.i2.name %>
+										<div class="col-lg-12">
+											<a href='#'><%= kwartier.i1.name %></a> °<%= kwartier.i1.birth.place %> <%= kwartier.i1.birth.date %>
+										</div>
+									</div>
+									<div class="row show-grid">
+										<div class="col-md-6 ks-gen2">
+											<div class="row show-grid">
+												<div class="col-lg-12">
+													<a href='#'><%= kwartier.i2.name %></a>
+												</div>
+											</div>
 											<div class="row show-grid">
 												<div class="col-lg-6">
-													Level 3: <%= kwartier.i4.name %>
 													<div class="row show-grid">
-														<div class="col-lg-6">
-															Odilon Verschaetse
+														<div class="col-md-12 ks-gen3">
+															<a href='#'><%= kwartier.i4.name %></a>
 														</div>
-														<div class="col-lg-6">
-															Cesaria Dewilde
+													</div>
+													<div class="row">
+														<div class="col-md-6 ks-gen4">
+															<a href='#'><%= kwartier.i8.name %></a>
+														</div>
+														<div class="col-md-6 ks-gen4">
+															<a href='#'><%= kwartier.i9.name %></a>
 														</div>
 													</div>													
 												</div>
 												<div class="col-lg-6">
-													Level 3: <%= kwartier.i5.name %>
 													<div class="row show-grid">
-														<div class="col-lg-6">
-															Level 4: .col-lg-6
+														<div class="col-md-12 ks-gen3">
+															<a href='#'><%= kwartier.i5.name %></a>
 														</div>
-														<div class="col-lg-6">
-															Level 4: .col-lg-6
+													</div>
+													<div class="row">
+														<div class="col-md-6 ks-gen4">
+															<a href='#'><%= kwartier.i10.name %></a>
+														</div>
+														<div class="col-md-6 ks-gen4">
+															<a href='#'><%= kwartier.i11.name %></a>
 														</div>
 													</div>														
 												</div>
 											</div>
 										</div>
-										<div class="col-md-6">
-											Level 2: <%= kwartier.i3.name %>
+										<div class="col-md-6 ks-gen2">
+											<div class="row show-grid">
+												<div class="col-lg-12">
+													<a href='#'><%= kwartier.i3.name %></a>
+												</div>
+											</div>
 											<div class="row show-grid">
 												<div class="col-lg-6">
-													Level 3: <%= kwartier.i6.name %>
 													<div class="row show-grid">
-														<div class="col-lg-6">
-															Level 4: .col-lg-6
+														<div class="col-md-12 ks-gen3">
+															<a href='#'><%= kwartier.i6.name %></a>
 														</div>
-														<div class="col-lg-6">
-															Level 4: .col-lg-6
+													</div>
+													<div class="row">
+														<div class="col-md-6 ks-gen4">
+															<a href='#'><%= kwartier.i12.name %></a>
+														</div>
+														<div class="col-md-6 ks-gen4">
+															<a href='#'><%= kwartier.i13.name %></a>
 														</div>
 													</div>														
 												</div>
 												<div class="col-lg-6">
-													Level 3: <%= kwartier.i7.name %>
 													<div class="row show-grid">
-														<div class="col-lg-6">
-															Level 4: .col-lg-6
+														<div class="col-md-12 ks-gen3">
+															<a href='#'><%= kwartier.i7.name %></a>
 														</div>
-														<div class="col-lg-6">
-															Level 4: .col-lg-6
+													</div>
+													<div class="row">
+														<div class="col-md-6 ks-gen4">
+															<a href='#'><%= kwartier.i14.name %></a>
+														</div>
+														<div class="col-md-6 ks-gen4">
+															<a href='#'><%= kwartier.i15.name %></a>
 														</div>
 													</div>														
 												</div>
