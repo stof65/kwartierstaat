@@ -76,5 +76,29 @@
 	<!-- THEME SCRIPTS -->
 	<script src="admin-v1.2.2/js/flex.js"></script>
 	
+	<!-- CUSTOM SCRIPTS -->
+	<!--
+	<script src="javascript/jquery.fittext.js"></script>
+	<script type="text/javascript">
+		$(".fittext1").fitText();
+		$("#fittext2").fitText(1.2);
+		$("#fittext3").fitText(1.1, { minFontSize: '50px', maxFontSize: '75px' });
+	</script>
+	-->
+	<script src="javascript/jquery.matchHeight.js"></script>
+	<script type="text/javascript">
+            (function() {
+                /* matchHeight example */
+                $(function() {
+                    // apply your matchHeight on DOM ready (they will be automatically re-applied on load or resize)
+                    // get test settings
+                    var byRow = $('body').hasClass('test-rows');
+                    // apply matchHeight to each item container's items
+                    $('.items-container').each(function() {
+                        $(this).children('.item').matchHeight(byRow);
+                    });
+                });
+            })();
+	</script>
 </body>
 </html>
