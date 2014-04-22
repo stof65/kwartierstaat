@@ -9,8 +9,8 @@ var partials = require('express-partials');
 //var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
-
 var app = express();
+require('./app_server/models/db');
 
 // all environments
 app.set('port', process.env.PORT || 3000);
