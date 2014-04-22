@@ -27,6 +27,9 @@ app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
+console.log('NODE_ENV: ' + process.env.NODE_ENV);
+console.log('MONGOLAB_URI: ' + process.env.MONGOLAB_URI);
+
 // development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());

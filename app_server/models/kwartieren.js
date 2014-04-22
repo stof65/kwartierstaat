@@ -6,7 +6,7 @@ var eventSchema = new mongoose.Schema({
 });
 var personSchema = new mongoose.Schema({
 	name: {type: String, required: true},
-	birth: {type: [EventSchema], required:false}
+	birth: {type: [eventSchema], required:false}
 });
 
 var kwartierSchema = new mongoose.Schema({

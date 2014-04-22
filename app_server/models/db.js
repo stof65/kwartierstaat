@@ -2,6 +2,9 @@ var mongoose = require( 'mongoose' );
 var gracefulShutdown;
 //var dbURI = 'mongodb://mongousr:mongopwd@ds035368.mongolab.com:35368/kwartierstaatdb';
 var dbURI = 'mongodb://localhost/kwartierstaatdb';
+if (process.env.NODE_ENV === 'production') {
+	dbURI = process.env.MONGOLAB_URI;
+}	
 mongoose.connect(dbURI);
 
 var readLine = require ("readline");
