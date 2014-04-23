@@ -27,9 +27,9 @@ var kwartierSchema = new mongoose.Schema({
 	i15: [personSchema]	
 });
 
-mongoose.model('Kwartier', kwartierSchema);
+var Kwartier = mongoose.model('kwartieren', kwartierSchema,'kwartieren');
 /*
-kwartier_KV = {
+var kwartier_KV = new Kwartier({
 	i1: {name: 'Kristof Verschaetse', birth: {place: 'Menen', date: '1965-07-07'}},
 	i2: {name: 'Maurits Verschaetse'},
 	i3: {name: 'Nadia Samyn'},
@@ -45,5 +45,14 @@ kwartier_KV = {
 	i13: {name: 'Louise Mathilde Van Meenen'},
 	i14: {name: 'Constant Ferdinand Lagae'},
 	i15: {name: 'Maria Ludovica Wastyn'}		
-};
+});
+
+kwartier_KV.save(function (err, KV) {
+  if (err) return console.error(err);
+});
 */
+Kwartier.find(function (err, klist) {
+	if (err) return console.error(err);
+	console.log(klist);
+});
+
