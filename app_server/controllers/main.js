@@ -1,3 +1,8 @@
+var kwartier_model = require('../models/kwartieren');
+
+var test = kwartier_model.Kwartier_FindByName('Kristof Verschaetse',function(){console.log('OK');});
+// bovenstaande moet in de "gen3" functie komen !!!
+
 /* GET home page */
 exports.index = function(req, res){
   res.render('index', { layout:'layout', title: 'home page' });  // layout:'layout' is the default
@@ -20,8 +25,9 @@ exports.gen3 = function(req, res){
 			layout:'layout',
 			title: '3 generaties',
 			kwartier: kwartier_KV
+			//kwartier: kwartier_model.Kwartier_FindByName('Kristof Verschaetse')
 		})
-	}
+	}	
 	else if (req.query.root == 'Maurits Verschaetse') {
 		res.render('gen3', {
 			layout:'layout',
